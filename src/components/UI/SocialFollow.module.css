@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgb(32, 35, 41);
+}
+.container a {
+  color: white;
+}
+.icon {
+  margin: 2%;
+}

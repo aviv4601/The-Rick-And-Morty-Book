@@ -1,0 +1,48 @@
+.container {
+  max-width: inherit;
+}
+.body {
+  background-color: rgb(32, 35, 41);
+}
+
+.no-figures-founded {
+  font-size: large;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  padding: 4rem;
+  background-color: rgb(32, 35, 41);
+  position: relative;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.active {
+  border-bottom: 2px solid #3e3838;
+  font-weight: bold;
+}
+
+.background-img::before {
+  background-image: url("components/Assets/AvivInTheBackgroundOfRickAndMorty.jpeg");
+  background-size: cover;
+  content: "";
+  position: absolute;
+  opacity: 0.2;
+  height: 40%;
+  width: 100%;
+  background-size: 70% 150%;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+@media (max-width: 450px) {
+  .background-img::before {
+    height: 28%;
+  }
+}

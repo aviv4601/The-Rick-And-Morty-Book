@@ -1,0 +1,39 @@
+.filter-container {
+  background-color: rgb(32, 35, 41);
+  text-align: center;
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 4rem;
+}
+
+.form {
+  width: 20%;
+  margin-top: 1rem;
+}
+
+.input-line {
+  height: 3rem;
+  width: 100%;
+  font-size: medium;
+}
+
+@media (max-width: 450px) {
+  .form {
+    width: 40%;
+    margin-top: 1rem;
+  }
+  .input {
+    font-size: small;
+    height: 3rem;
+    width: 50%;
+    margin-top: 2rem;
+    position: relative;
+  }
+  .input-line {
+    height: 3rem;
+    width: 100%;
+    font-size: small;
+  }
+}

@@ -1,0 +1,31 @@
+.container {
+  background-color: rgb(32, 35, 41);
+  position: relative;
+  display: flex;
+  padding: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+}
+
+.no-figures-founded {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin: 3rem;
+}
+
+@media (max-width: 450px) {
+  .container {
+    background-color: rgb(32, 35, 41);
+    position: relative;
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+}

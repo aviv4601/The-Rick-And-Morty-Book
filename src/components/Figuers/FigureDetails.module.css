@@ -1,0 +1,125 @@
+.card {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  margin: 0.68rem;
+  background-color: rgb(60, 62, 68);
+  cursor: pointer;
+}
+
+.img-fluid {
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+.title {
+  color: white;
+  font-weight: bolder;
+  font-size: 140%;
+}
+
+.status-species-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  bottom: 25%;
+}
+
+.figure-status-color-Alive,
+.figure-status-color-Dead,
+.figure-status-color-unknown {
+  display: flex;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-right: 0.375rem;
+  margin-top: 0.1rem;
+  border-radius: 50%;
+}
+
+.figure-status-color-Alive {
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+.figure-status-color-Alive {
+  background-color: rgb(85, 204, 68);
+}
+/* .figure-status-color-unknown {
+  background-color: rgb(158, 158, 158);
+} */
+
+/* .figure-status-color-Dead {
+  background-color: rgb(214, 61, 46);
+} */
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgb(91, 196, 77);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 5px rgb(79, 173, 67);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgb(91, 196, 77);
+  }
+}
+
+@media (max-width: 720px) {
+  .title {
+    font-size: 100%;
+  }
+}
+
+.figure-status-color-Dead {
+  background-color: rgb(173, 0, 0);
+  animation: drop 2s infinite both;
+}
+
+@keyframes drop {
+  50% {
+    transform: translateY(0) scaleX(0.85) rotate(45deg);
+    animation-timing-function: ease-out;
+  }
+  80% {
+    transform: translateY(100%) scaleX(0.85) rotate(45deg);
+    animation-timing-function: ease-in;
+    border-radius: 0 100% 100% 100%;
+  }
+  100% {
+    transform: translateY(120%) scaleX(0.85) rotate(45deg);
+    border-radius: 0 100% 100% 100%;
+  }
+}
+
+.figure-status-color-unknown {
+  background-color: rgb(158, 158, 158);
+  animation: shakingDot 2s infinite;
+}
+
+@keyframes shakingDot {
+  0%,
+  50% {
+    transform: translate(0, 3px);
+    opacity: 0;
+  }
+  25%,
+  75% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 3px);
+    opacity: 0;
+  }
+}

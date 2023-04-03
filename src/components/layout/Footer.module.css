@@ -1,0 +1,12 @@
+.footer {
+  position: relative;
+  background-color: rgb(32, 35, 41);
+  padding: 1rem 0;
+}
+
+.signture {
+  text-align: center;
+  color: white;
+  font-size: large;
+  font-weight: 400;
+}

@@ -1,0 +1,16 @@
+.status-select-div {
+  margin-top: 1rem;
+}
+
+.status-select {
+  height: 3rem;
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .status-select {
+    height: 100%;
+    width: 100%;
+    font-size: x-small;
+  }
+}

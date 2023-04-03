@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: rgb(32, 35, 41);
+  width: 100%;
+}
+
+.container ul {
+  width: 20%;
+}
+
+.container li a {
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+.container li {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+}
+
+@media (max-width: 520px) {
+  .nextLabel,
+  .prev {
+    display: none;
+  }
+}
